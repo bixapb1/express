@@ -35,12 +35,6 @@ const corsOptions = {
 //     },
 //   })
 // );
-// app.use(
-//   helmet({
-//     contentSecurityPolicy: false,
-//   })
-// );
-// app.use(helmet.referrerPolicy({ policy: "same-origin" }));
 
 // app.use(cors());
 app.use(cors(corsOptions));
