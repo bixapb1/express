@@ -23,6 +23,7 @@ function CardFood({ product, grupBtn }) {
           height="fit-content"
           image={product.src}
           alt={product.name}
+          crossorigin="anonymous"
         />
         <CardContent sx={{ textAlign: "center" }}>
           <Typography gutterBottom variant="h5" component="div">
