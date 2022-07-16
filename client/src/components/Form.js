@@ -17,7 +17,7 @@ export default function Form() {
     if (order.length === 0) {
       alert("Сart is empty");
     } else {
-      fetch("/api/orders", {
+      fetch("https://app-shopex.herokuapp.com/api/orders", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
