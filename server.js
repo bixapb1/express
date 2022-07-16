@@ -26,15 +26,15 @@ const corsOptions = {
     }
   },
 };
-app.use(helmet());
-app.use(
-  helmet.contentSecurityPolicy({
-    useDefaults: true,
-    directives: {
-      "img-src": ["'self'", "https: data:"],
-    },
-  })
-);
+// app.use(helmet());
+// app.use(
+//   helmet.contentSecurityPolicy({
+//     useDefaults: true,
+//     directives: {
+//       "img-src": ["'self'", "https: data:"],
+//     },
+//   })
+// );
 // app.use(
 //   helmet({
 //     contentSecurityPolicy: false,
@@ -42,7 +42,7 @@ app.use(
 // );
 // app.use(helmet.referrerPolicy({ policy: "same-origin" }));
 
-app.use(cors());
+// app.use(cors());
 app.use(cors(corsOptions));
 
 //Routes
