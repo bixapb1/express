@@ -70,8 +70,8 @@ export default function Form() {
         {...register("phone", {
           required: "Phone is required",
           maxLength: {
-            value: 11,
-            message: "This input must not exceed 12 characters",
+            value: 16,
+            message: "This input must not exceed 17 characters",
           },
           minLength: {
             value: 8,

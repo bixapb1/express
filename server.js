@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const helmet = require("helmet");
 const bodyParser = require("body-parser");
 const path = require("path");
 const cors = require("cors");
@@ -38,7 +39,6 @@ mongoose.connect(
   process.env.DB_CONNECTION,
   {
     useNewUrlParser: true,
-    useFindAndModify: false,
   },
   () => console.log("conect DB")
 );

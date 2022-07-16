@@ -74,7 +74,7 @@ function HistoryOrder() {
               }}
             >
               <Typography variant="h5" component="div">
-                Order number: {order.id}
+                Order number: {order._id}
               </Typography>
               <Typography variant="h5" component="div">
                 Name: {order.name}

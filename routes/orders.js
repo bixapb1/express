@@ -13,8 +13,11 @@ router.get("/", async (req, res) => {
 
 router.post("/", async (req, res) => {
   const order = new Order({
-    Name: req.body.Name,
-    Phone: req.body.Phone,
+    name: req.body.name,
+    email: req.body.email,
+    phone: req.body.phone,
+    address: req.body.address,
+    order: req.body.order,
   });
 
   try {
