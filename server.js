@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const whitelist = [
   "http://localhost:3000",
   "http://localhost:8080",
-  "https://git.heroku.com/app-shopex.git",
+  "https://app-shopex.herokuapp.com/",
 ];
 const corsOptions = {
   origin: function (origin, callback) {
@@ -27,14 +27,6 @@ const corsOptions = {
   },
 };
 // app.use(helmet());
-// app.use(
-//   helmet.contentSecurityPolicy({
-//     useDefaults: true,
-//     directives: {
-//       "img-src": ["'self'", "https: data:"],
-//     },
-//   })
-// );
 
 // app.use(cors());
 app.use(cors(corsOptions));
