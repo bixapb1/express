@@ -25,7 +25,7 @@ export default function Form() {
           "Content-Type": "application/json",
         },
       };
-      fetch(`https://app-shopex.herokuapp.com/api/orders`, settings);
+      fetch(`https://app-shopex.herokuapp.com/api/orders/`, settings);
       reset();
       localStorage.setItem("order", JSON.stringify([]));
       dispach(setSnackOpen(true));
