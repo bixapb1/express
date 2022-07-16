@@ -19,7 +19,6 @@ router.post("/", async (req, res) => {
     address: req.body.address,
     order: req.body.order,
   });
-
   try {
     const savedOrder = await order.save();
     res.json(savedOrder);

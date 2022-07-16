@@ -7,7 +7,7 @@ const path = require("path");
 const cors = require("cors");
 require("dotenv/config");
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 const whitelist = [
   "http://localhost:3000",
@@ -39,10 +39,10 @@ app.use(cors());
 app.use(cors(corsOptions));
 
 //Routes
-const ordersRoute = require("./routes/orders");
 const shopsRoute = require("./routes/shops");
-app.use("/api/orders", ordersRoute);
+const ordersRoute = require("./routes/orders");
 app.use("/api/shops", shopsRoute);
+app.use("/api/orders", ordersRoute);
 
 mongoose.connect(
   process.env.DB_CONNECTION,

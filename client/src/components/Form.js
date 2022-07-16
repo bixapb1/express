@@ -26,8 +26,8 @@ export default function Form() {
           "Content-Type": "application/json",
         },
       };
-      fetch(`http://${location}:8080/api/orders`, settings);
-
+      // fetch(`http://${location}:8080/api/orders`, settings);
+      fetch(`http://${location}/api/orders`, settings);
       reset();
       localStorage.setItem("order", JSON.stringify([]));
       dispach(setSnackOpen(true));
