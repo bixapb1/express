@@ -17,13 +17,17 @@ export default function Form() {
     if (order.length === 0) {
       alert("Сart is empty");
     } else {
-      fetch("https://app-shopex.herokuapp.com/api/orders", {
+      const location = window.location.hostname;
+      const settings = {
         method: "POST",
+        body: JSON.stringify(data),
         headers: {
+          Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
-      });
+      };
+      fetch(`http://${location}:8080/api/orders`, settings);
+
       reset();
       localStorage.setItem("order", JSON.stringify([]));
       dispach(setSnackOpen(true));

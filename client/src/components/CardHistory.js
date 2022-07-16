@@ -15,7 +15,7 @@ export default function ActionAreaCard({ product }) {
           height="fit-content"
           image={src}
           alt={name}
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

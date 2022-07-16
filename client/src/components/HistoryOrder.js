@@ -85,6 +85,13 @@ function HistoryOrder() {
               <Typography variant="h5" component="div">
                 Email: {order.email}
               </Typography>
+              <Typography variant="h5" component="div">
+                Total cost:
+                {JSON.parse(order.order).reduce((acc, item) => {
+                  return acc + item.price * item.quantity;
+                }, 0)}
+                $
+              </Typography>
             </Box>
           </Box>
         );

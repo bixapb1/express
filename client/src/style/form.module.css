@@ -1,18 +1,10 @@
-
-  
- 
-  
-  .form {
-
+.form {
     margin: 0 auto;
     color: black;
   }
-  
-  .error {    font-size: 1.4rem;
+  .error { 
     color: red;
   }
-  
- 
   
   .input {
     display: block;
@@ -22,18 +14,15 @@
     border: 1px solid black;
     padding: 10px 15px;
     margin-bottom: 10px;
-
   }
   
   .label {
-
     line-height: 2;
     text-align: left;
     display: block;
-    margin-bottom: 13px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     color: black;
-
     font-weight: 200;
   }
   
@@ -41,9 +30,9 @@
     background: #ec5990;
     color: white;
     border: none;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 100;
     letter-spacing: 10px;
   }
